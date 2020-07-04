@@ -1,0 +1,12 @@
+body {
+    margin: 0px;
+}
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.nav-link {
+    display: inline;
+}
