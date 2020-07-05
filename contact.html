@@ -15,9 +15,9 @@
 </head>
 <body>
   <!-- the navigation menu at the top of the screen -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <!-- the "brand" (in this case my name) which is styled differently to make it stand out  -->
-    <a href="#" class="navbar-brand">Miles Cohn</a>
+    <a href="#" class="navbar-brand bg-info">Miles Cohn</a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -41,4 +41,38 @@
       </ul>
     </div>
   </nav>
+  <main class="container contactBox">
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Name</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Comments</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="I'm blown away by your handsomeness" rows="3"></textarea>
+      </div>
+    </form>
+
+    <button type="button" onclick="revealPunchline()" class="btn btn-primary">Send Information</button>
+
+  </main>
+  
+  <aside id="punchline">JK, I have no interest in communicating with you</aside>
+
+  <footer>
+    <h4>Made by a crazy person</h4>
+    <p>
+        &copy; 1568 some random guy I stole the web domain from
+    </p>
+  </footer>
+
+  <script>
+    function revealPunchline(){
+      document.getElementById("punchline").style.visibility = "visible";
+    }
+  </script>
 </body>
